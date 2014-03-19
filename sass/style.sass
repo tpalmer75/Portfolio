@@ -1,0 +1,207 @@
+$serif: 'aleoregular', serif
+$sans-serif-bold: 'open_sans_condensedbold', sans-serif
+$sans-serif: 'open_sanscondensed_light', sans-serif
+
+body
+	background: #ddd
+	font-family: $serif
+	margin: 0
+	.container
+		max-width: 800px
+		display: block
+		margin: auto
+		.content
+			margin: auto
+			display: inline-block
+			ul.grid
+				list-style: none
+				padding: 0
+				display: inline-block
+				margin: 20px auto 0 auto
+				text-align: center
+
+.arrow-right, .arrow-left
+	display: none
+	@media screen and (min-width:930px)
+		display: block
+		position: fixed
+		right: 25px
+		top: 50%
+		transition: all .25s
+		color: #ccc
+		max-width: 40px
+		&:hover
+			color: #999
+
+
+.arrow-left
+	@media screen and (min-width: 930px)
+		left: 10px
+		right: 0
+
+
+header
+	background: #222
+	padding: 10px
+	-webkit-transition: opacity 0.75s ease
+	transition: opacity 0.75s ease
+	.sizer
+		display: block
+		max-width: 800px
+		padding-left: 10px
+		margin: auto
+		.name
+			display: inline-block
+			width: 49%
+			#logo
+				text-decoration: none
+				text-transform: uppercase
+				color: #ccc
+				font-family: $sans-serif
+				display: inline-block
+				h1
+					margin: 0
+					padding-left: 5px
+					transition: color .25s
+					font-size: 40px
+					&:hover
+						color: white
+			@media screen and (max-width: 675px)
+				width: 100%
+				text-align: center
+	@media screen and (max-width: 400px)
+		padding-left: 0
+		padding-right: 0
+
+nav
+	display: inline-block
+	width: 49%
+	text-align: right
+	a
+		text-decoration: none
+		text-transform: uppercase
+		color: #ccc
+		font-family: $sans-serif
+		display: inline-block
+		padding: 5px
+		transition: color .25s
+		font-weight: bold
+		font-size: 24px
+		margin-left: 20px
+		&:hover
+			color: white
+	@media screen and (max-width: 675px)
+		text-align: center
+		width: 100%
+		a
+			margin: 0 10px 
+
+
+
+li.tile
+	display: inline-block
+	text-align: center
+	margin: 5px
+	position: relative
+	width: 250px
+	height: 250px
+	transition: all .25s
+	img.tile-image
+		width: inherit
+		height: inherit
+	@media screen and (max-width: 525px)
+		width: 225px
+		height: autp
+	@media screen and (max-width: 475px)
+		width: 200px
+		height: auto
+	@media screen and (max-width: 425px)
+		width: 250px
+		height: auto
+
+
+a.tile-link
+	position: absolute
+	left: 0
+	top: 0
+	display: block
+	width:  100%
+	height: 200px
+	text-decoration: none
+	color: transparent
+	transition: background .25s
+	padding-top: 45%
+	text-align: center
+	font-weight: bold
+	&:hover
+		background: rgba(221,221,221,.9)
+		color: black			
+
+.wrapper
+	display: block
+	max-width: 800px
+	margin: auto
+	text-align: center
+	padding-top: 1px
+	img
+		width: 100%
+	a
+		text-decoration: none
+		transition: color .25s
+	.ls
+		color: #144477
+		&:hover
+			color: #030f4b
+	.sg
+		color: rgba(67,107,76, 1)
+	.lotus
+		color: #e1af00
+		&:hover
+			text-decoration: underline
+
+	.about
+		color: #008fd5
+		&:hover
+			text-decoration: underline
+	h2
+		margin: 40px 10px
+
+.wrapper.about
+	max-width: 600px
+	line-height: 1.25
+	text-align: left
+	padding: 0 10px
+
+.description
+	max-width: 600px
+	display: block
+	margin: auto
+	padding: 40px 10px
+	line-height: 1.5
+
+.contact-me
+	border-top: 1px solid #222
+	padding: 40px 0
+
+.contact
+	max-width: 300px
+	margin: 40px auto
+	.icon
+		background: #999
+		width: 40px
+		height: 40px
+		display: inline-block
+		margin-bottom: -15px
+	p
+		display: inline-block
+		padding: 5px
+		margin-top: 10px
+	a
+		color: #222
+		display: block
+		transition: all .25s
+		margin-bottom: 10px
+		&:hover
+			color: #008fd5
+
+
