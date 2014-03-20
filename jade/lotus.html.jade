@@ -25,21 +25,3 @@ block content
 					| If you like this project, please consider 
 					a.lotus(href="about.html") contacting
 					|  me!
-	script
-	$(document).ready(function() {
-		$("body").keydown(function(e) {
-			if(e.which == 37) { // left     
-					$("a.arrow-left").trigger("click");
-				}
-			else if(e.which == 39) { // right     
-					$("a.arrow-right").trigger("click");
-				}
-			});
-			$("a.arrow-left").on("click",function(){
-				window.location = 'ls.html';  
-			});
-			$("a.arrow-right").on("click",function(){
-				// your scripts for next click here
-				window.location = 'sacred-gifts.html';   
-			});
-		});
