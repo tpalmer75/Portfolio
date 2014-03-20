@@ -7,6 +7,8 @@ html
 		link(href="fonts/opensans/stylesheet.css", rel="stylesheet", type="text/css")
 		link(href='fonts/stylesheet.css', rel='stylesheet', type='text/css')
 		link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script(src="js/arrow-keys.js")
 	body
 		header
 			.sizer
@@ -15,21 +17,24 @@ html
 						h1 Taylor Palmer
 				nav
 					a.active(href="index.html") Work
-					a(href="#") Thoughts
+					//- a(href="#") Thoughts
 					a(href="about.html") About
 		block content
 			.container
 				.content
 					ul.grid
 						li.tile
-							img(src="img/sg.jpg", class="tile-image", alt="Sacred Gifts")
-							a.tile-link(href="sacred-gifts.html") Sacred Gifts
-						li.tile
 							img(src="img/ls.png", class="tile-image", alt="BYU Learning Suite")
-							a.tile-link(href="ls.html") BYU Learning Suite
+							a.tile-link(href="ls.html") Learning Suite
 						li.tile
 							img(src="img/lotus.jpg", class="tile-image", alt="Lotus")
 							a.tile-link(href="lotus.html") Lotus
+						li.tile
+							img(src="img/sg.jpg", class="tile-image", alt="Sacred Gifts")
+							a.tile-link(href="sacred-gifts.html") Sacred Gifts
+						li.tile
+							img(src="img/lastfm.jpg", class="tile-image", alt="Last.fm")
+							a.tile-link(href="lastfm.html") Last.fm
 
 							
 						

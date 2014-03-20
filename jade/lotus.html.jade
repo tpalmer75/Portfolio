@@ -3,6 +3,8 @@ extends index.html
 block content
 	a.arrow-left(href="ls.html")
 			i.fa.fa-chevron-left.fa-4x
+	a.arrow-right(href="sacred-gifts.html")
+			i.fa.fa-chevron-right.fa-4x
 	.wrapper
 		h2 Lotus Cars Identity
 		img(src="img/lotus/lotus-1.jpg")
@@ -23,3 +25,21 @@ block content
 					| If you like this project, please consider 
 					a.lotus(href="about.html") contacting
 					|  me!
+	script
+	$(document).ready(function() {
+		$("body").keydown(function(e) {
+			if(e.which == 37) { // left     
+					$("a.arrow-left").trigger("click");
+				}
+			else if(e.which == 39) { // right     
+					$("a.arrow-right").trigger("click");
+				}
+			});
+			$("a.arrow-left").on("click",function(){
+				window.location = 'ls.html';  
+			});
+			$("a.arrow-right").on("click",function(){
+				// your scripts for next click here
+				window.location = 'sacred-gifts.html';   
+			});
+		});
