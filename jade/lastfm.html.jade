@@ -1,5 +1,10 @@
 extends index.html
 
+block links
+	a(href="index.html") Work
+	//- a(href="#") Thoughts
+	a(href="about.html") About
+
 block content
 	a.arrow-left(href="sacred-gifts.html")
 		i.fa.fa-chevron-left.fa-4x
@@ -11,15 +16,16 @@ block content
 			a.lastfm(href="http://last.fm", target="_blank") Last.fm
 			|  is a fantastic music discovery program, but the 
 			a.lastfm(href="https://play.google.com/store/apps/details?id=fm.last.android", target="_blank") Android app
-			|  is in desperate need of a redesign. My design seeks to update the interface, 
-			a.lastfm(href="http://developer.android.com/design/style/index.html", target="_blank") follow the Android style guide
-			| , and unite the app experience with the online web experience.
+			|  is in desperate need of a redesign. 
 		img(src="img/lastfm/lastfm-1.jpg")
 		.description
-			p Sample text
+			p 
+			| My design seeks to update the interface, 
+			a.lastfm(href="http://developer.android.com/design/style/index.html", target="_blank") follow the Android style guide
+			| , and unite the app experience with the online web experience.
 		img(src="img/lastfm/lastfm-3.jpg")
 		.description
-			p Sample text
+			p Each page is based on 44 pixel grid, giving each element a generous margin for touch interaction. Custom iconography unites with the OS while still maintaining its own identity.
 		block contact
 				p.contact-me
 					| If you like this project, please consider 

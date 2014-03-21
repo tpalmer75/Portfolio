@@ -1,9 +1,14 @@
 extends index.html
 
+block links
+	a(href="index.html") Work
+	//- a(href="#") Thoughts
+	a.active(href="about.html") About
+	
 block content
 	.wrapper.about
 		h2 Hi.
-		div(style='font-size:20px;margin-bottom: 40px;') I'm an up-and-coming designer and front end developer. I'm pursuing a degree in graphic design at BYU while working as web designer. I love to listen to music. And talk about it.
+		div(style='font-size:20px;margin-bottom: 40px;') I'm an up-and-coming designer and front end developer. I'm pursuing a degree in graphic design at BYU while working as a web designer. I love to listen to music. And talk about it.
 
 		//- p(style="text-align: center") Here's where to find me:
 		.contact

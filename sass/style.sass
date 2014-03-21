@@ -88,8 +88,22 @@ nav
 		font-weight: bold
 		font-size: 24px
 		margin-left: 20px
+		position: relative
 		&:hover
 			color: white
+	.active
+		&:after
+			content: " "
+			display: block
+			height: 0
+			width: 0
+			border-bottom: 10px solid #ddd
+			border-right: 10px solid transparent
+			border-left: 10px solid transparent
+			position: absolute
+			left: 30%
+			bottom: -10px
+
 	@media screen and (max-width: 675px)
 		text-align: center
 		width: 100%

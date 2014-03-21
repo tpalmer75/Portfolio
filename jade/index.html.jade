@@ -17,9 +17,10 @@ html
 					a(href="index.html", id="logo")
 						h1 Taylor Palmer
 				nav
-					a.active(href="index.html") Work
-					//- a(href="#") Thoughts
-					a(href="about.html") About
+					block links
+						a.active(href="index.html") Work
+						//- a(href="#") Thoughts
+						a(href="about.html") About
 		block content
 			.container
 				.content
