@@ -147,10 +147,11 @@ a.tile-link
 	padding-top: 45%
 	text-align: center
 	font-weight: bold
-	&:hover
-		background: rgba(221,221,221,.9)
-		color: black			
-
+	@media screen and (min-width:700px)
+		&:hover
+			background: rgba(221,221,221,.9)
+			color: black
+	
 .wrapper
 	display: block
 	max-width: 800px
